@@ -578,7 +578,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2d: {fileID: 1897020590}
   maxInitialAngle: 0.67
-  moveSpeed: 4
+  moveSpeed: 8
+  maxStartY: 4
 --- !u!1001 &901128910917772061
 PrefabInstance:
   m_ObjectHideFlags: 0
