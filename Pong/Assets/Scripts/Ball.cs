@@ -18,5 +18,11 @@ public class Ball : MonoBehaviour
         rb2d.velocity = dir * moveSpeed;
     }
 
-    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        ScoreZone scoreZone = collision.GetComponent<ScoreZone>();
+        if (scoreZone) { 
+        
+        }
+    }
 }
