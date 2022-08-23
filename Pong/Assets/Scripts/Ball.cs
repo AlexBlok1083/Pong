@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
+    [SerializeField] private GameManager gameManager;
     [SerializeField] private Rigidbody2D rb2d;
     [SerializeField] private float maxInitialAngle = 0.67f;
     [SerializeField] private float moveSpeed = 1f;
@@ -33,8 +34,10 @@ public class Ball : MonoBehaviour
     {
         ScoreZone scoreZone = collision.GetComponent<ScoreZone>();
         if (scoreZone) {
+            gameManager.OnScoreZoneReached(scoreZone.id);
             Resetball();
             InitialPush();
         }
+
     }
 }
