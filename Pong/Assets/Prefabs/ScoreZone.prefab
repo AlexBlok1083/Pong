@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6324231376345334036}
   - component: {fileID: 6324231376345334037}
   m_Layer: 0
-  m_Name: ScoreZoneLeft
+  m_Name: ScoreZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
